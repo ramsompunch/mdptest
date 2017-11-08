@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <mdp3.mdptest.ScalableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:scale_base_width="250"
+        app:scale_base_height="320"
+        android:id="@+id/menu"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:text="사료의 양은 [3]을 초과 할 수 없습니다."
+            android:textSize="20dp"
+            app:scale_textsize="25"
+            app:scale_width="250"
+            app:scale_height="90"
+            app:scale_top="10"
+            app:scale_left="0"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:text="많음=3"
+            android:textSize="20dp"
+            app:scale_textsize="30"
+            app:scale_width="250"
+            app:scale_height="50"
+            app:scale_top="100"
+            app:scale_left="30"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:text="보통=2"
+            android:textSize="20dp"
+            app:scale_textsize="30"
+            app:scale_width="250"
+            app:scale_height="50"
+            app:scale_top="140"
+            app:scale_left="30"
+            />
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:text="적음=1"
+        android:textSize="20dp"
+        app:scale_textsize="30"
+        app:scale_width="250"
+        app:scale_height="50"
+        app:scale_top="180"
+        app:scale_left="30"
+        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:text="****뒤로가기로 나가세요****"
+            android:textSize="20dp"
+            app:scale_textsize="20"
+            app:scale_width="250"
+            app:scale_height="40"
+            app:scale_top="290"
+            app:scale_left="0"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/dogfood_3"
+            app:scale_width="40"
+            app:scale_height="40"
+            app:scale_top="95"
+            app:scale_left="60"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/dogfood_2"
+            app:scale_width="40"
+            app:scale_height="40"
+            app:scale_top="135"
+            app:scale_left="60"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/doogfood_1"
+            app:scale_width="40"
+            app:scale_height="40"
+            app:scale_top="175"
+            app:scale_left="60"
+            />
+    </mdp3.mdptest.ScalableLayout>
+
+</LinearLayout>

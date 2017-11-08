@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+    <mdp3.mdptest.ScalableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:scale_base_width="250"
+        app:scale_base_height="320"
+        android:id="@+id/dogctrl2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/webaaa"
+            app:scale_textsize="40"
+            app:scale_width="250"
+            app:scale_height="300"
+            app:scale_top="20"
+            app:scale_left="0"
+            >
+
+        </WebView>
+
+
+
+
+    </mdp3.mdptest.ScalableLayout>
+</LinearLayout>

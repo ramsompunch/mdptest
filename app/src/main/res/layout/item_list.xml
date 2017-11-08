@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:sl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="15dp"
+    android:padding="10dp">
+    <mdp3.mdptest.ScalableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        sl:scale_base_height="200"
+        sl:scale_base_width="1080" >
+
+    <TextView
+        android:id="@+id/textView_list_id"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        sl:scale_height="150"
+        sl:scale_left="0"
+        sl:scale_textsize="50"
+        sl:scale_top="10"
+        sl:scale_width="300"
+        />
+
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/textView_list_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        sl:scale_height="150"
+        sl:scale_left="330"
+        sl:scale_textsize="50"
+        sl:scale_top="10"
+        sl:scale_width="350"
+        />
+
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/textView_list_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        sl:scale_height="150"
+        sl:scale_left="590"
+        sl:scale_textsize="50"
+        sl:scale_top="10"
+        sl:scale_width="530"
+        />
+    </mdp3.mdptest.ScalableLayout>
+
+</LinearLayout>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:sl="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+
+    android:orientation="vertical"
+    android:weightSum="1"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.25"
+        >
+        <mdp3.mdptest.ScalableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            sl:scale_base_height="300"
+            sl:scale_base_width="1080" >
+
+            <TextView
+                android:layout_width="372dp"
+                android:layout_height="match_parent"
+                android:text="        WI-FI\n  SmartHome"
+                android:layout_gravity="center"
+                sl:scale_height="300"
+                sl:scale_left="150"
+                sl:scale_textsize="100"
+                sl:scale_top="35"
+                sl:scale_width="900"
+                />
+        </mdp3.mdptest.ScalableLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.1"
+        >
+        <mdp3.mdptest.ScalableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            sl:scale_base_height="200"
+            sl:scale_base_width="1080" >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IP:"
+                sl:scale_height="200"
+                sl:scale_left="160"
+                sl:scale_textsize="100"
+                sl:scale_top="30"
+                sl:scale_width="400"
+                />
+
+            <EditText
+                android:id="@+id/ip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text=""
+                sl:scale_height="150"
+                sl:scale_left="270"
+                sl:scale_textsize="70"
+                sl:scale_top="20"
+                sl:scale_width="900"
+                />
+
+
+        </mdp3.mdptest.ScalableLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.13"
+        android:orientation="horizontal">
+
+        <mdp3.mdptest.ScalableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            sl:scale_base_height="200"
+            sl:scale_base_width="1080">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PORT:"
+                sl:scale_height="200"
+                sl:scale_left="0"
+                sl:scale_textsize="100"
+                sl:scale_top="30"
+                sl:scale_width="500" />
+
+            <EditText
+                android:id="@+id/port"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Port Num"
+                android:inputType="textPersonName"
+                sl:scale_height="150"
+                sl:scale_left="280"
+                sl:scale_textsize="70"
+                sl:scale_top="20"
+                sl:scale_width="400" />
+
+        </mdp3.mdptest.ScalableLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        android:orientation="horizontal">
+
+        <mdp3.mdptest.ScalableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            sl:scale_base_height="200"
+            sl:scale_base_width="1080">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Waiting....."
+                sl:scale_height="100"
+                sl:scale_left="0"
+                sl:scale_textsize="60"
+                sl:scale_top="30"
+                sl:scale_width="900" />
+
+        </mdp3.mdptest.ScalableLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:orientation="horizontal">
+
+        <mdp3.mdptest.ScalableLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            sl:scale_base_height="300"
+            sl:scale_base_width="1080">
+            <Button
+                android:onClick="OnClick"
+                android:id="@+id/ip_check"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="54dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/ip_check"
+                sl:scale_height="280"
+                sl:scale_left="400"
+                sl:scale_textsize="50"
+                sl:scale_top="0"
+                sl:scale_width="270" />
+
+            <Button
+                android:onClick="OnClick"
+                android:id="@+id/home"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="54dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/home"
+                sl:scale_height="280"
+                sl:scale_left="80"
+                sl:scale_textsize="50"
+                sl:scale_top="0"
+                sl:scale_width="270" />
+            <Button
+                android:onClick="OnClick"
+                android:id="@+id/dog"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="54dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/dog"
+                sl:scale_height="280"
+                sl:scale_left="750"
+                sl:scale_textsize="50"
+                sl:scale_top="0"
+                sl:scale_width="270" />
+
+        </mdp3.mdptest.ScalableLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:orientation="horizontal">
+
+        <mdp3.mdptest.ScalableLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            sl:scale_base_height="300"
+            sl:scale_base_width="1080">
+            <Button
+                android:onClick="OnClick"
+                android:id="@+id/dogmanager"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="54dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/dogma"
+                sl:scale_height="100"
+                sl:scale_left="140"
+                sl:scale_textsize="50"
+                sl:scale_top="0"
+                sl:scale_width="100" />
+
+            <Button
+                android:onClick="OnClick"
+                android:id="@+id/homemanager"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="54dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/except"
+                sl:scale_height="100"
+                sl:scale_left="0"
+                sl:scale_textsize="50"
+                sl:scale_top="0"
+                sl:scale_width="100" />
+
+
+        </mdp3.mdptest.ScalableLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
